@@ -15,7 +15,8 @@
   border: none;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   background-color: var(--dark-gray);
 }
@@ -76,7 +77,6 @@ footer a {
 }
 
 .turn {
-  color: var(--yellow);
   align-self: center;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -231,6 +231,10 @@ footer a {
   width: 30px;
 }
 
+.arrow-down {
+  transform: rotate(180deg);
+}
+
 @media (min-width: 768px) {
   .grid {
     width: 490px;
@@ -238,7 +242,7 @@ footer a {
     grid-template-rows: 50px repeat(3, 150px) 60px;
     gap: 20px;
   }
-  
+
   .img-size {
     height: 100px;
     width: 100px;

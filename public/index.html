@@ -15,14 +15,19 @@
   <body>
     <main>
       <div class="grid">
-        <div class="turn yellow" data-id="turn">
-          <img src="cross.svg" alt="cross icon" class="img-label">
-          <p>Player 1, you're up!</p>
+        <div class="turn" data-id="turn">
+          <img src="cross.svg" alt="cross icon" class="img-label" />
+          <p class="turquoise">Player 1, you're up!</p>
         </div>
         <div class="actions" data-id="actions">
-          <button class="actions-btn">
+          <button class="actions-btn" data-id="actions-btn">
             Actions
-            <img src="down-arrow.svg" alt="down arrow" height="16px" width="10px">
+            <img
+              src="down-arrow.svg"
+              alt="down arrow"
+              height="16px"
+              width="10px"
+            />
           </button>
 
           <div class="items border hidden" data-id="actions-items">
@@ -43,15 +48,15 @@
 
         <div class="score shadow" style="background-color: var(--turquoise)">
           <p>Player 1</p>
-          <span>0 Wins</span>
+          <span data-id="p1-wins">0 Wins</span>
         </div>
         <div class="score shadow" style="background-color: var(--light-gray)">
           <p>Ties</p>
-          <span>0</span>
+          <span data-id="ties">0</span>
         </div>
         <div class="score shadow" style="background-color: var(--yellow)">
           <p>Player 2</p>
-          <span>0 Wins</span>
+          <span data-id="p2-wins">0 Wins</span>
         </div>
       </div>
     </main>
@@ -59,21 +64,17 @@
     <footer>
       <p>
         Tic Tac Toe by
-        <a
-          href="https://github.com/iGeorgeUA"
-          target="_blank"
-          >@iGeorgeUA</a
-        >
+        <a href="https://github.com/iGeorgeUA" target="_blank">@iGeorgeUA</a>
       </p>
     </footer>
 
     <div class="modal hidden" data-id="modal">
       <div class="modal-contents">
-        <p  data-id="modal-text">Player 1 wins!</p>
+        <p data-id="modal-text">Player 1 wins!</p>
         <button data-id="modal-btn">Play again</button>
       </div>
     </div>
 
-    <script src="/src/script.js"></script>
+    <script src="/src/app.js" type="module"></script>
   </body>
 </html>
